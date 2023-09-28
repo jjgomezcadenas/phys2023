@@ -1,0 +1,57 @@
+\documentclass[9pt]{beamer}
+\usetheme{Madrid}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{esvect}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{empheq}
+\usepackage[many]{tcolorbox}
+
+%$\vv{\bm{L}}
+
+\title{Are neutrinos their own antiparticles?}
+ 
+\subtitle{The Fermi Paradox}
+ 
+\author{J.J. G\'omez Cadenas}
+ 
+\institute{Donostia International Physics Center (DIPC)} % (optional)
+ 
+\date[October 6th, 2018] % (optional)
+{PHYSIS, SAN SEBASTIAN: 2-6 OCTOBER 2018}
+ 
+\logo{\includegraphics[height=0.5cm]{dipc.png}
+\includegraphics[height=0.5cm]{IB.png}}
+
+
+\tcbset{highlight math style={enhanced,
+  colframe=red!60!black,colback=yellow!50!white,arc=4pt,boxrule=1pt,
+  }}
+
+\newtcbox{\mybox}[1][]{nobeforeafter,math upper,tcbox raise base,
+  enhanced,frame hidden,boxrule=0pt,interior style={top color=green!10!white,
+  bottom color=green!10!white,middle color=green!50!yellow},
+  fuzzy halo=1pt with green,drop large lifted shadow,#1}
+\begin{document}
+
+\frame{\titlepage}
+
+\input{fermiparadox.tex}
+%\input{introSpin.tex}
+%\input{IntroDiracEquation.tex}
+%\input{planeWaveSolutionsDirac.tex}
+%\input{needQFT.tex}
+%
+
+
+%\input{energyAndSpinProjections.tex}
+%\input{highEnergySolutions.tex}
+%\input{FermiTheory.tex}
+%\input{DiscoveryNeutrinos.tex}
+%\input{NeutrinosLookingGlass.tex}
+%\input{MajoranaTheory.tex}
+%\input{MassiveNeutrinos.tex}
+
+
+\end{document}
